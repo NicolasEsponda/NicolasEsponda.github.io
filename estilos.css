@@ -206,7 +206,7 @@ button:active {
     grid-template-columns: auto;
   }
   .imgmenu {
-    width: 200px;
+    width: 250px;
   }
   .divmenu {
     display: grid;
