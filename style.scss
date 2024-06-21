@@ -1,9 +1,11 @@
 $color-fondo: #dfd5d5e8;
-$color-texto-header: #272520e7;
-$color-texto-nav: white;
-$color-fondo-main: #f17e13f6;
-$color-fondo-main-hover: #afe911f5;
-$color-fondo-main-active: #4CAF50;
+$color-fondo-secundario: #333;
+$color-fondo-terceario: #f17e13f6;
+$color-texto-principal: #272520e7;
+$color-texto-secundario: white;
+$color-hover: #afe911f5;
+$color-hover-active: #4CAF50;
+$Txt-fuente: monospace;
 
 * {
     margin: 10px;
@@ -12,7 +14,6 @@ $color-fondo-main-active: #4CAF50;
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,9 +25,9 @@ header {
     grid-template-columns: auto auto;
     padding: 20px;
     justify-content: space-between;
-    font-family: monospace;
+    font-family: $Txt-fuente;
     font-size: 30px;
-    color: $color-texto-header;
+    color: $color-fondo-secundario;
 }
 
 header div {
@@ -35,10 +36,10 @@ header div {
 
 /* Estilos para el menú de navegación */
 nav {
-    background-color: #333;
+    background-color: $color-fondo-secundario;
     display: flex;
     justify-content: center;
-    font-family: monospace;
+    font-family: $Txt-fuente;
     font-size: 20px;
 }
 
@@ -51,7 +52,7 @@ nav ul .animacion{
 }
 
 nav a {
-    color: $color-texto-nav;
+    color: $color-texto-secundario;
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -60,7 +61,7 @@ nav a {
     content: '';
     height: 2px;
     width: 0%;
-    background-color: $color-fondo-main-active;
+    background-color: $color-hover-active;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -81,11 +82,11 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 70%;
-    color: #f8f8f8;
+    color: $color-texto-secundario;
     font-size: 30px;
     text-align: center;
     padding: 50px 0;
-    font-family: monospace;
+    font-family: $Txt-fuente;
 }
 
 /* Estilos para la sección de pizzas */
@@ -93,7 +94,7 @@ section {
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
-    font-family: monospace;
+    font-family: $Txt-fuente;
     font-size: 30px;
 }
 
@@ -115,47 +116,73 @@ section h2{
     cursor: pointer;
 }
 
-.image {
-    position: relative;
-}
-
-.image img {
-    width: 400px;
-    height: 400px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.image:hover .overlay {
-    opacity: 1;
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.image1{
+    background-image: url(https://cdn.bolivia.com/gastronomia/2011/08/25/pizza-margarita-3684.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-content: center;
     text-align: center;
 }
+
+.image2{
+    background-image: url(https://th.bing.com/th/id/R.2d0e5fe68702c84e757ff1a3b9f9f6a4?rik=l5OGIYzFu5wpdw&riu=http%3a%2f%2fwww.unileverfoodsolutions.pl%2fdam%2fglobal-ufs%2fmcos%2fNEE%2fcalcmenu%2frecipes%2fPL-recipes%2fgeneral%2fpizza-peperoni%2fmain-header.jpg&ehk=1CpTge3lg32sK13%2fJUgS94fEidXKihkD0DQ9ah5Qk%2b8%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.image3{
+    background-image: url(https://vidaverde.co/wp-content/uploads/2019/06/news-80.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.image4{
+    background-image: url(https://nuestrasrecetas.es/wp-content/uploads/2015/05/hawaiana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+.image5{
+    background-image: url(https://fillmore13brewery.com/wp-content/uploads/2017/01/bbq-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.image6{
+    background-image: url(https://d320djwtwnl5uo.cloudfront.net/article/8metlvp345_portada-pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+h3{
+    background-color: #3d2e2eb6;
+    color: rgba(216, 213, 213, 0.74);
+}
+
+
 
 /* Estilos para el pie de página */
 footer {
     background-color: $color-fondo;
-    color: $color-texto-header;
+    color: $color-texto-principal;
     text-align: center;
     padding: 20px;
-    font-family: monospace;
+    font-family: $Txt-fuente;
     font-size: 15px;
 }
 
@@ -178,8 +205,8 @@ button {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
-    background-color: $color-fondo-main; 
+    color: $color-texto-secundario;
+    background-color: $color-fondo-terceario; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -188,16 +215,20 @@ button {
 
 /* Estilos para el botón al pasar el ratón */
 button:hover {
-    background-color: $color-fondo-main-hover; 
+    background-color: $color-hover; 
 }
 
 /* Estilos para el botón al hacer clic */
 button:active {
-    background-color: $color-fondo-main-active; 
+    background-color: $color-hover-active; 
 }
 
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
+    body{
+        width: auto;
+    }
+
     header{
         width: auto;
         display: grid;
@@ -205,12 +236,14 @@ button:active {
     }
 
     nav ul{
+        width: 100%;
         display: grid;
         grid-template-columns: auto;
     }
 
 
     .listas{
+        width: 100%;
         display: grid;
         grid-template-columns: auto;
         font-size: medium;
@@ -221,8 +254,18 @@ button:active {
         grid-template-columns: auto;
     }
 
-    .imgmenu{
+    .image{
+        display: grid;
+        grid-template-columns: 250px;
+    }
+
+    .img{
         width: 250px;
+    }
+
+   
+    .imgmenu{
+        width: 200px
     }
 
     .divmenu{
