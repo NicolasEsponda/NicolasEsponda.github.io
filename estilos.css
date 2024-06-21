@@ -6,7 +6,6 @@
 
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -20,7 +19,7 @@ header {
   justify-content: space-between;
   font-family: monospace;
   font-size: 30px;
-  color: rgba(39, 37, 32, 0.9058823529);
+  color: #333;
 }
 
 header div {
@@ -71,7 +70,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 70%;
-  color: #f8f8f8;
+  color: white;
   font-size: 30px;
   text-align: center;
   padding: 50px 0;
@@ -104,63 +103,65 @@ section h2 {
   cursor: pointer;
 }
 
-.image1{
-    background-image: url(https://th.bing.com/th/id/R.a08521f0ab18b7dc285476e7a499900f?rik=szG3FfcLb0nNZQ&riu=http%3a%2f%2fwww.amomikitchenaid.com%2fwp-content%2fuploads%2f2017%2f02%2fBLOG-RECETA-PIZZA-MARGARITA-MAR17.jpg&ehk=7Mx4VbMB2oIZdFz7fKzlfhWQb4UW4fODUB5uiyi4ckw%3d&risl=&pid=ImgRaw&r=0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+.image1 {
+  background-image: url(https://cdn.bolivia.com/gastronomia/2011/08/25/pizza-margarita-3684.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-content: center;
+  text-align: center;
 }
 
-.image2{
-    background-image: url(https://th.bing.com/th/id/R.2d0e5fe68702c84e757ff1a3b9f9f6a4?rik=l5OGIYzFu5wpdw&riu=http%3a%2f%2fwww.unileverfoodsolutions.pl%2fdam%2fglobal-ufs%2fmcos%2fNEE%2fcalcmenu%2frecipes%2fPL-recipes%2fgeneral%2fpizza-peperoni%2fmain-header.jpg&ehk=1CpTge3lg32sK13%2fJUgS94fEidXKihkD0DQ9ah5Qk%2b8%3d&risl=&pid=ImgRaw&r=0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+.image2 {
+  background-image: url(https://th.bing.com/th/id/R.2d0e5fe68702c84e757ff1a3b9f9f6a4?rik=l5OGIYzFu5wpdw&riu=http%3a%2f%2fwww.unileverfoodsolutions.pl%2fdam%2fglobal-ufs%2fmcos%2fNEE%2fcalcmenu%2frecipes%2fPL-recipes%2fgeneral%2fpizza-peperoni%2fmain-header.jpg&ehk=1CpTge3lg32sK13%2fJUgS94fEidXKihkD0DQ9ah5Qk%2b8%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-content: center;
+  text-align: center;
 }
 
-.image3{
-    background-image: url(https://vidaverde.co/wp-content/uploads/2019/06/news-80.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+.image3 {
+  background-image: url(https://vidaverde.co/wp-content/uploads/2019/06/news-80.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-content: center;
+  text-align: center;
 }
 
-.image4{
-    background-image: url(https://nuestrasrecetas.es/wp-content/uploads/2015/05/hawaiana.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    align-content: center;
-    text-align: center;
-}
-.image5{
-    background-image: url(https://fillmore13brewery.com/wp-content/uploads/2017/01/bbq-pizza.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+.image4 {
+  background-image: url(https://nuestrasrecetas.es/wp-content/uploads/2015/05/hawaiana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-content: center;
+  text-align: center;
 }
 
-.image6{
-    background-image: url(https://d320djwtwnl5uo.cloudfront.net/article/8metlvp345_portada-pizza.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    align-content: center;
-    text-align: center;
+.image5 {
+  background-image: url(https://fillmore13brewery.com/wp-content/uploads/2017/01/bbq-pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-content: center;
+  text-align: center;
 }
 
-h3{
-    background-color: #3d2e2eb6;
-    color: rgba(216, 213, 213, 0.74);
+.image6 {
+  background-image: url(https://d320djwtwnl5uo.cloudfront.net/article/8metlvp345_portada-pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  align-content: center;
+  text-align: center;
 }
+
+h3 {
+  background-color: rgba(61, 46, 46, 0.7137254902);
+  color: rgba(216, 213, 213, 0.74);
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: rgba(223, 213, 213, 0.9098039216);
@@ -190,7 +191,7 @@ button {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   background-color: rgba(241, 126, 19, 0.9647058824);
   border: none;
   border-radius: 5px;
@@ -210,16 +211,21 @@ button:active {
 
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
+  body {
+    width: auto;
+  }
   header {
     width: auto;
     display: grid;
     font-size: medium;
   }
   nav ul {
+    width: 100%;
     display: grid;
     grid-template-columns: auto;
   }
   .listas {
+    width: 100%;
     display: grid;
     grid-template-columns: auto;
     font-size: medium;
@@ -228,8 +234,15 @@ button:active {
     display: grid;
     grid-template-columns: auto;
   }
+  .image {
+    display: grid;
+    grid-template-columns: 250px;
+  }
+  .img {
+    width: 250px;
+  }
   .imgmenu {
-    width: 300px;
+    width: 200px;
   }
   .divmenu {
     display: grid;
